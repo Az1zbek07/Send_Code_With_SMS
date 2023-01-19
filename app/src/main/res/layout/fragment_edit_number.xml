@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".fragments.EditNumberFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xush kelibsiz!"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Avtorizatsiyadan o'tish uchun telefon raqamingizni kiriting" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon raqamingiz"
+            android:id="@+id/editNumber"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FCB600"
+        android:layout_marginTop="30dp"
+        android:text="Kirish"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        android:id="@+id/btnGo"
+        android:padding="12dp" />
+
+</LinearLayout>
